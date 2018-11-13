@@ -1,24 +1,24 @@
-#PiggyBank smart contract. 
+# PiggyBank smart contract. 
 
-##Deploy of a contract
+## Deploy of a contract
  
  no automation
 
-##Methods
+## Methods
 
-###initcontract()
+### initcontract()
 Initialisation of a contract price matrix and bets time line
 
-###paywinner()
+### paywinner()
 Pay winner and comission
 
-###cleanoldbets()
+### cleanoldbets()
 Clean from bets older then last 5 games to safe RAM
 
-###transfer() 
+### transfer() 
 Handle transfer of EOS bets to the smart contract 
 
-###Automated Test Suite  
+### Automated Test Suite  
 1. Install `EOS` and `EOSFactory` based on the guide: `http://eosfactory.io/build/html/tutorials/01.InstallingEOSFactory.html` 
 2. Compile contract and put `wasm` and `abi` file to build directory
 3. Run `python3 tests/piggybanktest.py` 
